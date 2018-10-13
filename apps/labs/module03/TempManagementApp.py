@@ -10,14 +10,14 @@ from labs.module03 import TempSensorAdaptor
 from labs.module03 import TempActuatorEmulator
 
 sysPerfAdaptor = TempSensorAdaptor.TempSensorAdaptor(5,70,35,True)
-sysActuatorProxy = TempActuatorEmulator.TempActuatorEmulator()
+sysActuator = TempActuatorEmulator.TempActuatorEmulator()
 
 sysPerfAdaptor.enableAdaptor = True
 sysPerfAdaptor.run()
 
 
-sysActuatorProxy.enableEmulator = True
-sysActuatorProxy.start()
+sysActuator.enableEmulator = True
+sysActuator.start()
 
 while (True):
     sleep(10)

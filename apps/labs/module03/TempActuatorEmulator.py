@@ -26,7 +26,8 @@ class TempActuatorEmulator(threading.Thread):
         super(TempActuatorEmulator, self).__init__()
         self.config = ConfigUtil.ConfigUtil('../../../data/ConnectedDevicesConfig.props')
         self.config.loadConfig()
-        
+
+# This is a method to precess the message. We read the newest data and compare it with the old data and give message to clients.       
     def processMessage(self, data):
         v = ActuatorData()
 

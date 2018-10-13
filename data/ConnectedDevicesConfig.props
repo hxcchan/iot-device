@@ -12,7 +12,7 @@ fromAddr =hansong2008.good@163.com
 toAddr = hansong2008.good@163.com,1012986543@qq.com
 toMediaAddr = Not Set
 toTxtAddr = Not Set
-authToken =iot12345
+authToken =
 enableAuth = True
 enableCrypt = True
 

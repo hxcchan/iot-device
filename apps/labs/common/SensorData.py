@@ -46,7 +46,7 @@ class SensorData():
         def setName(self, name):
             self.name = name
 
-# Reading system information            
+# Reading system information              
         def __str__(self):
             customStr = \
                 str(self.name + ':' + \
